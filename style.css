@@ -1,0 +1,159 @@
+:root {
+    /*Primary*/
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+}
+
+html {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+/*way to center everything on a page make something go to the middle*/
+.container {
+    display: flex;
+    min-width: 300px;
+    max-width: 700px;
+    min-height: 98vh;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.result-card {
+    min-height: 20rem;
+    max-height: 20rem;
+    min-width: 20rem;
+    width: 20rem;
+    padding: 5%;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(var(--LightSlateBlue),var(--LightRoyalBlue));
+    z-index: 1;
+}
+
+
+
+.score {
+    outline: 2px solid linear-gradient(var(--LightSlateBlue),var(--LightRoyalBlue));
+    font-size: 2.5rem;
+    background: linear-gradient(hsl(254, 71%, 47%, 1),hsl(246, 84%, 56%, 0.5));
+    border-radius: 100%;
+    max-width: 70px;
+    min-height: 70px;
+    margin: 0 auto;
+    padding: 10%;
+    align-items: center;
+}
+
+.score div {
+    color: rgb(114, 114, 114);
+    font-size: 0.8rem;
+}
+
+.container p{
+    color: rgb(185, 183, 183);
+    font-size: 0.8rem;
+}
+
+.summary-card {
+    min-height: 20rem;
+    max-height: 20rem;
+    margin-left: -5%;
+    padding: 5%;
+    padding-left: 10%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(187, 186, 186);
+    text-align:initial;
+}
+
+.summary-card h3 {
+    text-align: left;
+}
+
+.summary-stats {
+    max-width: 70%;
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+}
+
+.summary-stats span {
+    text-align: left;
+    margin-right: 1.1rem;
+
+}
+.summary-stats span i {
+    display: inline;
+    margin-right: 0.5rem;
+
+}
+.summary-stats p {
+    display: inline;
+    position: relative;
+    right: auto;
+    color: rgb(112, 112, 112);
+    font-size: 1rem;
+}
+.summary-stats p strong{
+    display: inline;
+    font-size: 1.1rem;
+    color: black
+}
+
+.reaction {
+    color: red;
+    background-color: rgb(240, 233, 233);
+}
+
+.memory {
+    color: hsl(41, 70%, 64%);
+    background-color: hsl(40, 17%, 93%);
+}
+
+.verbal {
+    color: hsl(164, 55%, 41%);
+    background-color: hsl(168, 20%, 90%);
+}
+.visual {
+    color:hsl(235, 51%, 49%);
+    background-color: hsl(233, 23%, 92%);
+}
+
+.summary-card button {
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 20px;
+    padding: 0.7rem 2rem;
+    min-width: 100%;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1rem;
+    border: none;
+}
+
+
+@media  (width < 415px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .result-card {
+        margin-top: -2rem;
+    }
+    .summary-card {
+        box-shadow: none;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: -1rem;
+    } 
+}
